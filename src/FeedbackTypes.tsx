@@ -1,15 +1,28 @@
+import bugImageUrl from './assets/bug.svg';
+import ideaImageUrl from './assets/idea.svg';
+import thoughtImageUrl from './assets/thought.svg';
+
 export const feedbackTypes = {
   BUG   : {
     title : 'Problema',
-    icon : ""
+    image : {
+      source : bugImageUrl,
+      alt : 'Ícone de Problema'
+    }
   },
   IDEA  : {
     title : 'Ideia',
-    icon : ""
+    image : {
+      source : ideaImageUrl,
+      alt : 'Ícone de Ideia'
+    }
   },
   OTHER : {
     title : 'Outro',
-    icon : ""
+    image : {
+      source : thoughtImageUrl,
+      alt : 'Ícone de Outro'
+    }
   },
 }
 

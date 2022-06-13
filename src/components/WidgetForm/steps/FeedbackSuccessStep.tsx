@@ -1,7 +1,8 @@
 import { CheckSquare } from "phosphor-react";
 import { CloseButton } from "../../CloseButton";
+import successImageUrl from "../../../assets/success.svg";
 
-interface FeedbackSuccessStepProps{
+interface FeedbackSuccessStepProps{ 
   onFeedbackRestartRequested : () => void
 }
 
@@ -13,7 +14,7 @@ export function FeedbackSuccessStep({onFeedbackRestartRequested} : FeedbackSucce
       </header>
 
       <section className="flex flex-col items-center py-10">
-        <CheckSquare size={32} />
+        <img src={successImageUrl} alt="Ícone de Sucesso" />
         <span className="text-xl mt-2">
           Agradecemos o feedback!
         </span>

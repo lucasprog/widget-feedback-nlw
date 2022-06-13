@@ -51,7 +51,10 @@ export function FeedbackContentStep({
           <ArrowLeft 
           weight="bold" className="w-4 h-4" />
         </button>
-        <span className="text-xl leading-6 flex items-center gap-2">{feedbackTypeInfo.title}</span>
+        <span className="text-xl leading-6 flex items-center gap-2">
+          <img src={feedbackTypeInfo.image.source} alt={feedbackTypeInfo.image.alt} />
+          {feedbackTypeInfo.title}
+        </span>
         <CloseButton />
       </header>
 
