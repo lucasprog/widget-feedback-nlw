@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#09090A] text-zinc-100;
+}
+
+.button-widget {
+  @apply bg-brand-500 rounded-full p-3 h-12 text-white font-semibold  hover:bg-orange-600 transition-colors flex items-center focus-visible:border-none focus:outline-none;
+}
+
+.button-widget .content-button {
+  @apply max-w-0 overflow-hidden transition-all duration-300 ease-linear;
+}
+
+textarea {
+  @apply min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin;
+}
+
+.button-camera {
+  @apply p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-orange-900;
+}
